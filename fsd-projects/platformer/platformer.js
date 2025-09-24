@@ -29,26 +29,26 @@ $(function () {
     // TODO 1 - Enable the Grid
     // toggleGrid();
 
-
     // TODO 2 - Create Platforms
     //createPlatform(xpos, ypos, Width, Height)
-    createPlatform(600, 700, 100, 5 ) 
-    createPlatform(700, 600, 100, 10)
-    createPlatform(500, 500, 100, 15)
-    createPlatform(400, 400, 100, 5,)
-    createPlatform(400, 600, 100, 12,)
-    createPlatform(500, 400, 100, 15,)
-    createPlatform(600, 400, 100, 10,)
-    // TODO 3 - Create Collectables
+    createPlatform(400, 600, 100, 5);
+    createPlatform(600, 300, 100, 10);
+    createPlatform(800, 500, 100, 15);
+    createPlatform(470, 500, 100, 5);
+    createPlatform(180, 650, 100, 12);
+    createPlatform(560, 400, 100, 13);
+    createPlatform(350, 780, 100, 10);
+    // TODO 3 - Create Collectables //createCollectable("type", xPos, yPos, gravity?, bounce? Between 0-1, minX = null, maxX = null, speed = 1)
+    //"type" can be 6 things... database diamond grace kennedi max steve
+    createCollectable("database", 400, 400)
+    createCollectable("max", 600, 600, 0.1)
+    createCollectable("cookie", 600, 350,)
 
-
-
-    
     // TODO 4 - Create Cannons
+    //createCannon("wall", pos, secondsX1000, width, height)
+    createCannon("right", 450, 2000);
+    createCannon("left", 400, 2000, 10, 10);
 
-
-    
-    
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
