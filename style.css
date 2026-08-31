@@ -2,12 +2,14 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
-  background: rgb(243, 242, 242);
-  color: rgb(2, 43, 43);
+  background: rgb(4, 231, 193);
+  color: #da0909;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
+
 
 #all-contents {
   max-width: 1500px;
@@ -16,17 +18,22 @@ body {
   padding: 32px 40px;
 }
 
-Main {
-  color:darkgreen;
+
+main {
   display: grid;
-   grid-template-columns: minmax(220px, 1fr) minmax(420px, 1.6fr);
+  grid-template-columns: minmax(220px, 1fr) minmax(420px, 1.6fr);
   align-items: center;
   min-height: calc(100vh - 160px);
   gap: clamp(32px, 5vw, 80px);
 }
 
-.Content {
- background-color: rgb(3, 10, 10);
+
+.sidebar {
+  width: 100%;
+}
+
+
+.content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -34,27 +41,20 @@ Main {
 }
 
 h2 {
-  color: #e94560;
-  margin: 0;
-  font-size: clamp(4rem, 10vw, 7rem);
-  line-height: 0.9;
-  font-weight: 900;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: #0fdd8e;
+margin: 0;
+font-size: clamp(4rem, 10vw, 7rem);
+line-height: 0.9;
+font-weight: 900;
+letter-spacing: -0.04em;
+text-transform: uppercase;
+color: #0e5344;
 }
 
 .content > p {
-  color: #17ca62;
-  margin: 0;
-  color: #16995c;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  line-height: 1.4;
-}
-
-.Sidebar {
-  background-color: rgb(145, 48, 48);
-  width: 100%;
+margin: 0;
+color: #800404;
+font-size: 0.9rem;
+text-transform: uppercase;
+letter-spacing: 0.15em;
+line-height: 1.4;
 }
