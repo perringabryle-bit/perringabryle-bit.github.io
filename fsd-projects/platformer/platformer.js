@@ -38,7 +38,7 @@ createPlatform(350, 650, 100, 30, "grey")
 createPlatform(800, 650, 100, 20, "grey")
 createPlatform(600, 550, 100, 20, "grey")
 createPlatform(400, 450, 100, 20, "grey")
-createPlatform(200, 550, 50, 10, "grey", 250, 250, 1, 600, 300, 1 )
+createPlatform(200, 550, 50, 10, "grey", 250, 250, 1, 350, 550, 1 )
 
     // TODO 3 - Create Collectables
 
