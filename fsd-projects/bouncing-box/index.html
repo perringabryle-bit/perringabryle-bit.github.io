@@ -71,8 +71,8 @@
 
       // TODO 2 - Variable declarations
       var positionX = 0;
-      var point = 0
-      var speed = 10
+      var points = 0;
+      var speed = 10;
 
       /**
        * This Function will be called 20 times/second.
@@ -82,7 +82,14 @@
       function update() {
         moveBoxTo(positionX); // Moves box to positionX
         positionX = positionX + speed; // Adds speed to positionX
-
+        if (positionX > boardWidth) {
+          speed = -speed
+        }
+        
+         
+        if (positionX < 0) {
+          speed = -speed
+        }
 
       }
 
@@ -98,13 +105,7 @@
         points = points + 1; // Adds 1 to points
         speed = 3 * points + 10;; // Adds 3 to speed// Adds 3 to speed
         changeBoxText(points);
-        if (positionX > boardWidth) {
-          speed = -speed
-        }
-
-        if (positionX < 0) {
-          speed = -speed
-        }
+       
 
       }
 
