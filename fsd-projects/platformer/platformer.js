@@ -66,7 +66,7 @@ createPlatform(200, 550, 50, 10, "grey", 250, 250, 1, 350, 550, 1 )
     //createCannon("top bottom left right", position, timeBetweenShots, BulletWidth, BulletHeight, minCannonPos, maxCannonPos, cannonSpeed)
     //createCannon("top bottom left right", position, timeBetweenShots, BulletWidth, BulletHeight)
     //createCannon("top bottom left right", position, timeBetweenShots)
-    createCannon("top", 900, 1000, 30, 50, 500, 1300, 2)
+    createCannon("top", 900, 900, 30, 50, 500, 1300, 2)
 
     createCannon("right", 450, 4000, 30, 10)
 
